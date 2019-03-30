@@ -1,0 +1,24 @@
+#1.1
+from random import randint
+list_= [randint(-100,100) for x in range(20)]
+for i in list_:
+    if i>10:
+        sum=+i
+print(sum)
+#или такой вариант
+#list_= [randint(-100,100) for x in range(20)]
+#sum=[x for x in list_ if x>10]
+#for i in sum:
+#    s=+i
+#1.2
+str=['sdbfdj','sbdchadcb','sjksbr','dxnjasnhrr']
+[print(x) for x in str if x.endswith('r')]
+#1.3
+list_= [randint(-100,100) for x in range(6)]
+if [x for x in list_ if x==3] ==[]:
+    list_[0]=3
+list_
+#1.4
+str='Строка произвольной длины'
+len(str) #кол-во символов
+len(str.split(' '))#кол-во слов
